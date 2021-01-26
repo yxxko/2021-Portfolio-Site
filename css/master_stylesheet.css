@@ -1,0 +1,144 @@
+@font-face{
+  font-family:'Nova Flat', 'Helvetica', 'Arial',sans-serif;
+  font-family:'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
+}
+* {
+  outline: dashed 1px salmon;
+  outline-offset: -1px;
+ }
+h1{
+  font-family:'Nova Flat', 'Helvetica', 'Arial',sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: rgb(27 56 82);
+}
+h3{
+  font-family: 'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
+  font-weight: 700;
+  color: rgb(27 56 82);
+  font-size: 18px;
+}
+p{
+  font-family: 'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(27 56 82);
+}
+ul{
+  font-family: 'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
+  font-weight: 700;
+  color: rgb(27 56 82);
+  list-style-type: none;
+}
+
+a:link{
+  font-family: 'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
+  font-weight: 700;
+  color: rgb(27 56 82);
+  font-size: 18px;
+  text-decoration:none;
+}
+button{
+  font-family: 'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+#button_position{
+  padding: 0 64px;
+}
+
+.header{
+  overflow: hidden;
+
+}
+.navigation_links{
+  display: inline;
+  padding: 8px 16px;
+  text-align: center;
+  float: right;
+}
+.site-header__logo{
+  max-width: 96px;
+  max-height: 32px;
+  float: left;
+}
+.vertical_caption{
+  text-align: right;
+  display: inline;
+  float: right;
+
+}
+.headshot{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: auto;
+}
+#headshot_img{
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+#headshot_container{
+  margin: 0;
+  width: 50%;
+  height: auto;
+  display: block;
+
+}
+#headshot_caption{
+  display: block;
+  float: right;
+  text-align: right;
+}
+.introduction{
+  display: inline-block;
+  float: left;
+  margin-left: 16px;
+
+}
+.latest_obsessions{
+  display: flex;
+  align-items: flex-end;
+}
+.currently{
+  float:left;
+  height: auto;
+  width: auto;
+
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+}
+.interactive-icons{
+  float: right;
+  display: inline;
+  height: 102px;
+  width: 151px;
+}
+.icon{
+  display: inline;
+}
+.attributions{
+  display: inline-block;
+  padding: 8px 16px;
+  text-align: center;
+  float: right;
+  height: 72px;
+}
+
+@media only screen 
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3){
+    h1{
+      font-size: 24px;
+      }
+    p{
+      font-size:14px;
+    }
+    
+}
