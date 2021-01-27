@@ -11,6 +11,7 @@ h1{
   font-weight: 500;
   font-size: 32px;
   color: rgb(27 56 82);
+  text-transform: uppercase;
 }
 h3{
   font-family: 'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
@@ -38,107 +39,134 @@ a:link{
   font-size: 18px;
   text-decoration:none;
 }
+a:visited{
+  color: rgb(27 56 82);
+}
 button{
   font-family: 'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
   font-weight: 700;
   font-size: 18px;
+  background: transparent;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 4px solid;
+  padding: 1px 0px;
+  height: max-content;
 }
-#button_position{
-  padding: 0 64px;
+img{ 
 }
 
-.header{
-  overflow: hidden;
-
+.headshot img{
+  border-top: solid 4px rgb(27 56 82);
+  border-bottom: solid 4px rgb(27 56 82);
 }
-.navigation_links{
-  display: inline;
-  padding: 8px 16px;
-  text-align: center;
-  float: right;
 }
-.site-header__logo{
-  max-width: 96px;
-  max-height: 32px;
-  float: left;
-}
-.vertical_caption{
-  text-align: right;
-  display: inline;
-  float: right;
-
-}
-.headshot{
+.mobile_menu{
+  padding: 8px 96px;
   display: flex;
   flex-direction: column;
-  float: left;
-  height: auto;
+  justify-content: center;
+  align-items: center;
+      
 }
-#headshot_img{
-  display: block;
-  margin: 0;
-  width: 100%;
-}
-#headshot_container{
-  margin: 0;
-  width: 50%;
-  height: auto;
-  display: block;
-
-}
-#headshot_caption{
-  display: block;
-  float: right;
-  text-align: right;
-}
-.introduction{
-  display: inline-block;
-  float: left;
-  margin-left: 16px;
-
-}
-.latest_obsessions{
-  display: flex;
-  align-items: flex-end;
-}
-.currently{
-  float:left;
-  height: auto;
-  width: auto;
-
-}
-.footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 72px;
-}
-.interactive-icons{
-  float: right;
-  display: inline;
-  height: 102px;
-  width: 151px;
-}
-.icon{
-  display: inline;
-}
-.attributions{
-  display: inline-block;
-  padding: 8px 16px;
-  text-align: center;
-  float: right;
-  height: 72px;
-}
-
-@media only screen 
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3){
+@media screen and (min-width: 500px){
     h1{
-      font-size: 24px;
+      font-size: 32px;
+      padding: 8px 8px;
       }
     p{
       font-size:14px;
+      line-height: 150%;
     }
-    
+.header{ 
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 72px;
+  align-items: center;
+  border-bottom: solid 4px rgb(27 56 82);
+  overflow: hidden;
+}
+    .site-header__navigation{
+      display: none;
+    }
+    .mobile_menu{
+      display: block;
+    position: relative;
+    justify-content: center;
+    padding: 20px 96px;
+    width: 100%;
+    border-left: solid 4px rgb(27 56 82);
+    }
+    .site-header__logo{
+      display: block;
+      position: relative;
+      padding: 16px 112px 16px 18px;
+      width: 100%;
+    }
+    .site-header__logo img{
+      display: block;
+      max-width: 120px;
+    }
+    .vertical_caption{
+      display:none;
+    }
+    .button_style{ 
+    }
+}
+#headshot_caption{
+  display: none;
+}
+#mobile_salutations{
+ text-align: center;
+ padding: 24px 24px;
+}
+.about_me{
+  text-align: center;
+  padding: 16px 32px 72px 16px;
+  overflow: hidden;
+}
+#desktop_introduction{
+  display: none;
+}
+#mobile_introduction{
+;
+}
+#introduction_paragraph{
+  display: block;
+  border-bottom: solid 4px rgb(27 56 82);
+  margin: 0px -10% 0px -10%;
+}
+.latest_obsessions{
+  display: grid;
+  grid-auto-columns: auto auto auto;
+  grid-gap: 4px;
+  border-left: solid 4px rgb(27 56 82);
+  border-bottom: solid 4px rgb(27 56 82);
+  padding: 16px 0px;
+}
+.currently{
+  display: grid;
+  text-align: left;
+  padding: 16px 16px 16px 0px;
+  grid-template-columns: 208px auto;
+}
+.currently img{
+  border-top: solid 4px rgb(27 56 82);
+  border-right: solid 4px rgb(27 56 82);
+  border-bottom: solid 4px rgb(27 56 82);
+
+  padding: 0;
+}
+#wait_more_button{
+  text-align: right;
+    display: block;
+    padding: 8px 16px;
+}
+}
+.footer{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 72px;
+  align-items: center;
 }
