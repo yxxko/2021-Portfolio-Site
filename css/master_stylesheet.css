@@ -68,15 +68,6 @@ button{
   height: max-content;
 }
 
-.mobile_menu{
-  padding: 8px 96px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-      
-}
-
 .header{ 
   display: grid;
   grid-template-columns: auto auto;
@@ -90,13 +81,15 @@ button{
       display: none;
     }
 
-    .mobile_menu{
+.mobile_navigation{
       display: block;
     position: relative;
     justify-content: center;
     padding: 20px 96px;
     width: 100%;
     border-left: solid 4px rgb(27 56 82);
+    flex-direction: column;
+    align-items: center;
     }
 
     .site-header__logo{
@@ -131,6 +124,9 @@ button{
 #mobile_salutations{
  text-align: center;
  padding: 24px 24px;
+}
+.menu{
+  padding: 0px 0px 450px 0px;
 }
 .details{
   display: block;
@@ -205,6 +201,8 @@ button{
   border-top: solid 4px rgb(27 56 82);
   display: block;
   align-items: center;
+  height: 128px;
+  overflow: hidden;
 }
 .footer_grid{
   display: grid;
