@@ -84,11 +84,11 @@ button{
 }
 
 .site-header__navigation{
-      display: none;
+    display: none;
     }
 
 .mobile_navigation{
-      display: block;
+    display: block;
     position: relative;
     justify-content: center;
     padding: 20px 96px;
@@ -96,6 +96,22 @@ button{
     border-left: solid 4px rgb(27 56 82);
     flex-direction: column;
     align-items: center;
+    }
+    .mobile_navigation_exit{
+    display: block;
+    position: relative;
+    justify-content: center;
+    padding: 20px 56px;
+    width: 100%;
+    border-left: solid 4px rgb(27 56 82);
+    flex-direction: column;
+    align-items: center;
+    }
+    .mobile_navigation_menu{
+      display: block;
+      position: relative;
+      padding: 24px 256px 34px 24px;
+      width: 100%;
     }
     .site-header__logo{
       display: block;
