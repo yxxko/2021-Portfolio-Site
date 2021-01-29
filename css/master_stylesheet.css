@@ -66,6 +66,7 @@ button{
   border-bottom: 4px solid;
   padding: 1px 0px;
   height: max-content;
+  width: max-content;
 }
 
 .header{ 
@@ -91,7 +92,6 @@ button{
     flex-direction: column;
     align-items: center;
     }
-
     .site-header__logo{
       display: block;
       position: relative;
@@ -106,6 +106,9 @@ button{
 
     .vertical_caption{
       display:none;
+    }
+    .horizontal_caption{
+      display: none;
     }
 .mobile_hero{
   display: block;
@@ -125,9 +128,24 @@ button{
  text-align: center;
  padding: 24px 24px;
 }
-.menu{
-  padding: 0px 0px 450px 0px;
+.menu_items{
+  display: block;
+  padding: 8px 0px 8px 24px;
+  border-bottom: solid 4px rgb(27 56 82);
 }
+.menu_items:hover{
+  background-color: rgb(27 56 82);
+}
+
+.menu_items a{
+  margin: 10px 0px 8px -24px;
+  padding: 10px 280px 10px 24px;
+}
+
+.menu_items a:hover{
+  color: rgb(250 212 203);
+}
+
 .details{
   display: block;
   padding: 8px 24px;
@@ -138,7 +156,7 @@ button{
   padding: 0 24px 24px 24px;
 }
 .simple_paragraph h1{
-  padding: 16px 0;
+  padding: 24px 0 16px 0;
 }
 .about_me{
   text-align: center;
@@ -169,6 +187,25 @@ button{
   text-transform: uppercase;
   padding: 8px 0;
 }
+.square_image_desktop_grid{
+  display: none;
+}
+.square_image_desktop{
+  display: none;
+}
+
+.square_image_mobile_grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-column-gap: 16px;
+  padding: 16px 0;
+}
+.square_image_mobile{
+  border: solid 4px rgb(27 56 82);
+  padding: 0;
+  min-width: 100%;
+}
 
 .currently{
   display: grid;
@@ -197,12 +234,47 @@ button{
 .site-footer__logo{
   display: none;
 }
+
+.reference{
+  margin: 0;
+  padding: 0 24px 56px 24px;
+}
+
+.reference h1{
+  padding: 16px 0;
+}
+
+.reference p{
+  padding: 4px 0;
+}
+
+.giant_quote{
+  font-size: 144px;
+  padding: 0 0 24px 0;
+  max-height: 50px;
+  margin: 8px 24px 24px 0px;
+  text-align: left;
+  line-height: 0.9;
+}
 .footer{
   border-top: solid 4px rgb(27 56 82);
   display: block;
   align-items: center;
-  height: 128px;
-  overflow: hidden;
+  position: relative;
+  height: 89px;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+.footer_menu_page{
+  border-top: solid 4px rgb(27 56 82);
+  display: block;
+  align-items: center;
+  position: absolute;
+  height: 89px;
+  bottom: 0;
+  left: 0;
+  width: 100%
 }
 .footer_grid{
   display: grid;
@@ -216,5 +288,5 @@ button{
     grid-row-gap: 32px;
 }
 #icon_padding{
-  padding: 48px;
+  padding: 64px 48px;
 }
