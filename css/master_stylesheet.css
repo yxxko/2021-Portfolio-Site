@@ -1,6 +1,11 @@
+@charset "UTF-8";
 @font-face{
   font-family:'Nova Flat', 'Helvetica', 'Arial',sans-serif;
+  src: "https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap"
+}
+@font-face{
   font-family:'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
+  src: "https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;700&display=swap"
 }
 * {
   outline: dashed 1px salmon;
@@ -121,6 +126,9 @@ button{
   border-top: solid 4px rgb(27 56 82);
   border-bottom: solid 4px rgb(27 56 82);
 }
+.photography_title{
+  display: none;
+}
 #headshot_caption{
   display: none;
 }
@@ -139,7 +147,7 @@ button{
 
 .menu_items a{
   margin: 10px 0px 8px -24px;
-  padding: 10px 280px 10px 24px;
+  padding: 14px 280px 10px 24px;
 }
 
 .menu_items a:hover{
