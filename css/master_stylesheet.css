@@ -86,6 +86,10 @@ button{
 .site-header__navigation{
     display: none;
     }
+    .site-header__navigation :focus{
+      outline: 4px dotted rgb(155 123 129);
+      outline-offset: 2px;
+    }
 
 .mobile_navigation{
     display: block;
@@ -97,6 +101,10 @@ button{
     flex-direction: column;
     align-items: center;
     }
+    .mobile_navigation :focus{
+      outline: 4px dotted rgb(155 123 129);
+      outline-offset: 2px;
+    }
     .mobile_navigation_exit{
     display: block;
     position: relative;
@@ -106,6 +114,10 @@ button{
     border-left: solid 4px rgb(27 56 82);
     flex-direction: column;
     align-items: center;
+    }
+    .mobile_navigation_exit :focus{
+      outline: 4px dotted rgb(155 123 129);
+      outline-offset: 2px;
     }
     .mobile_navigation_menu{
       display: block;
@@ -162,6 +174,10 @@ button{
 }
 .menu_items:hover{
   background-color: rgb(27 56 82);
+}
+.menu_items a:focus{
+  outline: 4px dotted rgb(155 123 129);
+  outline-offset: 2px;
 }
 
 .menu_items a{
@@ -293,6 +309,10 @@ button{
   left: 0;
   width: 100%
 }
+.footer :focus{
+  outline: 4px dotted rgb(155 123 129);
+  outline-offset: 2px;}
+
 .attributions{
   border-left: solid 4px rgb(27 56 82);
   width: auto;
@@ -323,6 +343,10 @@ button{
     grid-gap: 32px;
     grid-row-gap: 32px;
     padding: 32px;
+}
+.interactive-icons :focus{
+  outline: 4px dotted rgb(155 123 129);
+  outline-offset: 2px;
 }
 #icon_padding{
   padding: 72px 48px;
