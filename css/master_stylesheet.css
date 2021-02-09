@@ -11,6 +11,10 @@
   outline: dashed 1px salmon;
   outline-offset: -1px;
  }
+ 
+body{
+  min-height: max-content;
+}
 h1{
   font-family:'Nova Flat', 'Helvetica', 'Arial',sans-serif;
   font-weight: 500;
