@@ -7,11 +7,6 @@
   font-family:'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
   src: "https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;700&display=swap"
 }
-* {
-  outline: dashed 1px salmon;
-  outline-offset: -1px;
- }
- 
 body{
   min-height: max-content;
 }
@@ -332,10 +327,10 @@ button :focus{
   display: inline-block;
   border-left: solid 4px rgb(27 56 82);
   width: auto;
-  height: auto;
+  height: max-content;
 }
 .attributions div{
-  padding: 40px 24px;
+  padding: 20px 24px;
   max-width: max-content;
 }
 .footer_menu_page{
@@ -365,8 +360,15 @@ button :focus{
   outline-offset: 2px;
 }
 #icon_padding{
-  padding: 72px 48px;
+  padding: 48px 48px;
+  height: max-content;
 }
+}
+@media screen and (min-width: 511px){
+  #icon_padding{
+    padding: 37px 48px;
+  }
+  
 }
 @media screen and (min-width: 768px){
   h1{
@@ -405,9 +407,19 @@ button :focus{
     overflow: hidden;
     display: block;
   }
+  .attributions{
+    display: inline-block;
+    border-left: solid 4px rgb(27 56 82);
+    height: max-content;
+    width: max-content;
+  }
   .attributions div{
-    padding: 40px 40px;
-    max-width: max-content;
+    padding: 24px;
+  }
+  #icon_padding{
+    padding: 42px 48px;
+    height: max-content;
+    align-items: center;
   }
   .currently{
     display: grid;
@@ -445,7 +457,7 @@ button :focus{
     font-family: 'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
     font-weight: 500;
     color: rgb(27 56 82);
-    font-size:14px;
+    font-size:16px;
     line-height: 150%;
   }
   
@@ -479,6 +491,9 @@ button :focus{
     padding: 1px 0px;
     height: max-content;
     width: max-content;
+  }
+  footer{
+    height: 300px;
   }
       .mobile_navigation{
         display:none;
@@ -524,6 +539,9 @@ button :focus{
       .horizontal_caption{
         display: block;
       }
+      .simple_paragraph_placeholder{
+        padding: 339px 86px 24px 108px;
+      }
       .about_me{
         grid-area: b;
       }
@@ -534,9 +552,9 @@ button :focus{
         display: none;
       }
       .latest_obsessions{
-display: block;
-max-width: fit-content;
-border-left: none;
+       display: block;
+       max-width: fit-content;
+       border-left: none;
       }
       
       .latest_obsessions h2:first-child{
@@ -566,4 +584,36 @@ border-left: none;
         border-bottom: solid 4px rgb(27 56 82);
         border-left: none;
       }
-}
+      .footer_grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        max-height: 25%;
+      }
+      .attributions{
+        display: inline-block;
+        border-left: solid 4px rgb(27 56 82);
+        height: max-content;
+        width: max-content;
+      }
+      .attributions div{
+        padding: 24px;
+      }
+      #icon_padding{
+        border-left: solid 4px rgb(27 56 82);
+        padding: 46px 48px;
+        height: max-content;
+        align-items: center;
+      }
+      .site-footer__logo{
+        display: inline-block;
+        position: relative;
+        padding: 16px 376px 16px 24px;
+        width: 100%;
+        margin-top: 24px;
+      }
+  
+      .site-footer__logo img{
+        display: block;
+        max-width: 120px;
+      }
+    }
