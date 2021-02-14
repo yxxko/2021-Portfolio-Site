@@ -7,6 +7,7 @@
   font-family:'Darker Grotesque', 'Helvetica', 'Arial',sans-serif;
   src: "https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;700&display=swap"
 }
+
 body{
   min-height: max-content;
 }
@@ -366,7 +367,11 @@ button :focus{
 }
 @media screen and (min-width: 511px){
   #icon_padding{
-    padding: 37px 48px;
+    padding: 27px 48px;
+    height: max-content;
+  }
+  .footer_grid{
+    max-height: 70px;
   }
   
 }
@@ -414,7 +419,7 @@ button :focus{
     width: max-content;
   }
   .attributions div{
-    padding: 24px;
+    padding: 32px;
   }
   #icon_padding{
     padding: 42px 48px;
@@ -597,10 +602,11 @@ button :focus{
       }
       .attributions div{
         padding: 24px;
+        margin-bottom: 8px;
       }
       #icon_padding{
         border-left: solid 4px rgb(27 56 82);
-        padding: 46px 48px;
+        padding: 37px 48px;
         height: max-content;
         align-items: center;
       }
