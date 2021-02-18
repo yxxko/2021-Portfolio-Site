@@ -362,7 +362,7 @@ button :focus{
   outline-offset: 2px;
 }
 #icon_padding{
-  padding: 48px 48px;
+  padding: 24px 36px;
   height: max-content;
 }
 }
