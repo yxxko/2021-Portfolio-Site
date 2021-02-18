@@ -209,7 +209,7 @@ button :focus{
 }
 .simple_paragraph_placeholder{
   margin: 0;
-  padding: 0 24px 24px 24px;
+  padding: 120px 24px 24px 24px;
 }
 .about_me{
   text-align: center;
