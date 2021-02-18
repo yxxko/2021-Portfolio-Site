@@ -334,19 +334,20 @@ button :focus{
   padding: 20px 24px;
   max-width: max-content;
 }
-.footer_menu_page{
+.footer_menu_page {
   border-top: solid 4px rgb(27 56 82);
-  display: block;
+  display: flex;
   align-items: center;
   position: absolute;
-  height: 89px;
+  height: auto;
   bottom: 0;
   left: 0;
-  width: 100%
+  width: 100%;
 }
-.footer_grid{
+.footer_grid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(3,1fr);
+  max-height: 25%;
 }
 .interactive-icons{
   display: grid;
